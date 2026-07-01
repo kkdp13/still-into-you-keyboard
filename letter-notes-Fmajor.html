@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Still Into You — Beginner Keyboard Sheet</title>
+<style>
+  @page { size: A4; margin: 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Helvetica Neue", "Sarabun", Arial, sans-serif; color:#1a1a2e; margin:0; font-size:13px; line-height:1.5; }
+  h1 { font-size:26px; margin:0 0 2px; letter-spacing:-.5px; }
+  h1 .by { font-size:15px; font-weight:400; color:#6b6b83; }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 14px; }
+  .chip { background:#f0f0f7; border-radius:20px; padding:3px 12px; font-size:12px; font-weight:600; }
+  .chip.hl { background:#ffd23f; }
+  h2 { font-size:15px; margin:18px 0 8px; padding-bottom:4px; border-bottom:2px solid #ffd23f; display:flex; align-items:center; gap:6px; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .chordcard { border:1px solid #e3e3ee; border-radius:10px; padding:10px 8px 8px; text-align:center; background:#fafafd; }
+  .chordcard .cname { font-size:17px; font-weight:800; }
+  .chordcard .cnotes { font-size:11px; color:#6b6b83; margin-bottom:6px; }
+  /* mini keyboard */
+  .kb { position:relative; display:inline-flex; height:74px; margin:0 auto; }
+  .wk { width:20px; height:74px; border:1px solid #33334d; background:#fff; border-radius:0 0 3px 3px; position:relative; }
+  .wk .lbl { position:absolute; bottom:2px; left:0; right:0; font-size:8px; color:#9a9ab0; }
+  .wk.on { background:#ffd23f; }
+  .wk.on .lbl { color:#7a5c00; font-weight:700; }
+  .bk { position:absolute; width:12px; height:44px; background:#26263a; border-radius:0 0 2px 2px; top:0; z-index:2; }
+  .bk.on { background:#e8590c; }
+  .prog { background:#fafafd; border:1px solid #e3e3ee; border-radius:10px; padding:10px 14px; }
+  .prog .row { margin:5px 0; }
+  .prog .sec { display:inline-block; width:96px; font-weight:700; color:#4a4a6a; }
+  .prog b { display:inline-block; background:#eef0ff; border:1px solid #d5d9f5; border-radius:6px; padding:1px 9px; margin:1px 3px; font-size:13px; }
+  .prog b.dm { background:#fff0f0; border-color:#f5d5d5; }
+  .melody { background:#1a1a2e; color:#f5f5fa; border-radius:10px; padding:12px 16px; font-family:"SF Mono","Menlo",monospace; font-size:14px; line-height:2.1; }
+  .melody .ph { color:#ffd23f; font-weight:700; margin-right:8px; }
+  .melody .n { display:inline-block; background:#2e2e48; border-radius:5px; padding:1px 7px; margin:2px; }
+  .melody .n.bk { background:#e8590c; color:#fff; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .box { background:#fafafd; border:1px solid #e3e3ee; border-radius:10px; padding:10px 14px; }
+  .box h3 { margin:0 0 6px; font-size:13px; }
+  ul { margin:4px 0; padding-left:18px; }
+  li { margin:3px 0; }
+  .tips { background:#fff9e6; border:1px solid #ffe08a; border-radius:10px; padding:10px 14px; }
+  .legend { font-size:11px; color:#6b6b83; margin:6px 0 0; }
+  .foot { margin-top:16px; padding-top:8px; border-top:1px solid #e3e3ee; font-size:10px; color:#9a9ab0; }
+  .foot a { color:#7a7a9a; }
+</style>
+</head>
+<body>
+
+  <h1>Still Into You <span class="by">— Paramore</span></h1>
+  <div class="meta">
+    <span class="chip hl">Key: F major</span>
+    <span class="chip">Tempo ~136 BPM (ซ้อมช้า ~68)</span>
+    <span class="chip">4 คอร์ด: F · Dm · B♭ · C</span>
+    <span class="chip">เวอร์ชัน Beginner (มือขวาทำนอง / มือซ้ายเบส)</span>
+  </div>
+
+  <h2>🎹 คอร์ดที่ใช้ — กดปุ่มที่ไฮไลต์</h2>
+  <div class="grid">
+    <!-- F major: F A C -->
+    <div class="chordcard">
+      <div class="cname">F</div>
+      <div class="cnotes">F · A · C</div>
+      <div class="kb">
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="wk"><span class="lbl">D</span></div>
+        <div class="wk"><span class="lbl">E</span></div>
+        <div class="wk on"><span class="lbl">F</span></div>
+        <div class="wk"><span class="lbl">G</span></div>
+        <div class="wk on"><span class="lbl">A</span></div>
+        <div class="wk"><span class="lbl">B</span></div>
+        <div class="wk on"><span class="lbl">C</span></div>
+        <div class="bk" style="left:14px"></div>
+        <div class="bk" style="left:34px"></div>
+        <div class="bk" style="left:74px"></div>
+        <div class="bk" style="left:94px"></div>
+        <div class="bk" style="left:114px"></div>
+      </div>
+    </div>
+    <!-- Dm: D F A -->
+    <div class="chordcard">
+      <div class="cname">Dm</div>
+      <div class="cnotes">D · F · A</div>
+      <div class="kb">
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="wk on"><span class="lbl">D</span></div>
+        <div class="wk"><span class="lbl">E</span></div>
+        <div class="wk on"><span class="lbl">F</span></div>
+        <div class="wk"><span class="lbl">G</span></div>
+        <div class="wk on"><span class="lbl">A</span></div>
+        <div class="wk"><span class="lbl">B</span></div>
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:14px"></div>
+        <div class="bk" style="left:34px"></div>
+        <div class="bk" style="left:74px"></div>
+        <div class="bk" style="left:94px"></div>
+        <div class="bk" style="left:114px"></div>
+      </div>
+    </div>
+    <!-- Bb: Bb D F -->
+    <div class="chordcard">
+      <div class="cname">B♭</div>
+      <div class="cnotes">B♭ · D · F</div>
+      <div class="kb">
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="wk on"><span class="lbl">D</span></div>
+        <div class="wk"><span class="lbl">E</span></div>
+        <div class="wk on"><span class="lbl">F</span></div>
+        <div class="wk"><span class="lbl">G</span></div>
+        <div class="wk"><span class="lbl">A</span></div>
+        <div class="wk"><span class="lbl">B</span></div>
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:14px"></div>
+        <div class="bk" style="left:34px"></div>
+        <div class="bk" style="left:74px"></div>
+        <div class="bk" style="left:94px"></div>
+        <div class="bk on" style="left:114px"></div>
+      </div>
+    </div>
+    <!-- C: C E G -->
+    <div class="chordcard">
+      <div class="cname">C</div>
+      <div class="cnotes">C · E · G</div>
+      <div class="kb">
+        <div class="wk on"><span class="lbl">C</span></div>
+        <div class="wk"><span class="lbl">D</span></div>
+        <div class="wk on"><span class="lbl">E</span></div>
+        <div class="wk"><span class="lbl">F</span></div>
+        <div class="wk on"><span class="lbl">G</span></div>
+        <div class="wk"><span class="lbl">A</span></div>
+        <div class="wk"><span class="lbl">B</span></div>
+        <div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:14px"></div>
+        <div class="bk" style="left:34px"></div>
+        <div class="bk" style="left:74px"></div>
+        <div class="bk" style="left:94px"></div>
+        <div class="bk" style="left:114px"></div>
+      </div>
+    </div>
+  </div>
+  <p class="legend">🟡 ปุ่มขาวเหลือง = กด · 🟠 ปุ่มดำส้ม = กด (มีปุ่มดำแค่ B♭ ตัวเดียวทั้งเพลง) · ทุกคอร์ดกด 3 นิ้วพร้อมกัน (นิ้วโป้ง-กลาง-ก้อย)</p>
+
+  <h2>🗺️ โครงเพลง + ลำดับคอร์ด (เล่นวนตามนี้)</h2>
+  <div class="prog">
+    <div class="row"><span class="sec">Intro / Verse</span> <b>F</b> <b class="dm">Dm</b> <b>F</b> <b class="dm">Dm</b> <span class="legend">(วนสลับ F ↔ Dm ท่อนละ 1 ห้อง)</span></div>
+    <div class="row"><span class="sec">Pre-chorus</span> <b>B♭</b> <b>C</b> <b>Dm</b> <b>F</b></div>
+    <div class="row"><span class="sec">Chorus</span> <b>B♭</b> <b>C</b> <b>F</b> <b>F</b> &nbsp;→&nbsp; <b>B♭</b> <b>C</b> <b class="dm">Dm</b> <b>F</b></div>
+  </div>
+
+  <h2>🎵 ทำนองหลัก (มือขวา · เวอร์ชัน simplified)</h2>
+  <div class="melody">
+    <div><span class="ph">A</span><span class="n">C</span><span class="n">C</span><span class="n">D</span> &nbsp; <span class="n">A</span><span class="n">G</span><span class="n">F</span><span class="n">E</span><span class="n">D</span></div>
+    <div><span class="ph">B</span><span class="n">F</span><span class="n">F</span><span class="n">A</span> &nbsp; <span class="n">A</span><span class="n">A</span></div>
+    <div><span class="ph">C</span><span class="n bk">B♭</span><span class="n">A</span><span class="n">G</span><span class="n">F</span><span class="n">E</span><span class="n">D</span> &nbsp; <span class="n">A</span> &nbsp; <span class="n">D</span></div>
+  </div>
+  <p class="legend">อ่านซ้ายไปขวา · แต่ละตัว = 1 จังหวะ (เว้นวรรค = พักนิด) · ตัวอักษร = ชื่อโน้ตปุ่มขาว ยกเว้น <b>B♭</b> = ปุ่มดำ · เล่นในช่วงกลางคีย์บอร์ด (รอบ ๆ middle C)</p>
+
+  <h2>👐 วิธีเล่นแบบง่ายสุด (2 สเต็ป)</h2>
+  <div class="two">
+    <div class="box">
+      <h3>① เริ่มจากคอร์ดล้วน (ง่ายสุด)</h3>
+      <ul>
+        <li><b>มือซ้าย:</b> กดโน้ตตัวเดียว = ตัวแรกของคอร์ด (F→กด F, Dm→กด D, B♭→กด B♭, C→กด C)</li>
+        <li><b>มือขวา:</b> กดคอร์ดเต็ม 3 นิ้ว ตามไดอะแกรมด้านบน</li>
+        <li>เปลี่ยนคอร์ดตามลำดับ "โครงเพลง" · ร้อง/ฮัมทำนองตามไป</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>② เพิ่มทำนอง (ขั้นถัดไป)</h3>
+      <ul>
+        <li><b>มือขวา:</b> เล่นทำนองหลัก (ช่อง 🎵 ด้านบน) แทนการกดคอร์ด</li>
+        <li><b>มือซ้าย:</b> กดโน้ตเบส (ตัวแรกของคอร์ด) ค้างไว้ทั้งห้อง</li>
+        <li>พอคล่อง ค่อยสลับ คอร์ด ↔ ทำนอง ให้เพลงเต็มขึ้น</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>💡 เคล็ดลับมือใหม่</h2>
+  <div class="tips">
+    <ul>
+      <li><b>ซ้อมช้าก่อน</b> — ตั้งจังหวะ ~68 BPM (ครึ่งความเร็วจริง) แล้วค่อยเร่งเป็น 136</li>
+      <li><b>ฝึกเปลี่ยนคอร์ดคู่ที่เจอบ่อยสุดก่อน:</b> F ↔ Dm (ต่างกันแค่ขยับนิ้วนิดเดียว) แล้วค่อยเพิ่ม B♭, C</li>
+      <li><b>นับ 1-2-3-4</b> ทุกห้อง เปลี่ยนคอร์ดที่จังหวะ "1"</li>
+      <li>ทั้งเพลงมีแค่ <b>4 คอร์ด</b> วนซ้ำ — จำ 4 รูปนี้ได้ = เล่นได้ทั้งเพลง</li>
+      <li>อยากง่ายกว่านี้อีก บอกได้ — แปลงเป็น <b>คีย์ C major (ปุ่มขาวล้วน ไม่มีปุ่มดำเลย)</b> ให้ได้</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    ชีตซ้อมเวอร์ชัน beginner (simplified) — ทำเพื่อการเรียนรู้ ไม่รวมเนื้อร้อง · คอร์ด/ทำนองอ้างอิง Ultimate-Guitar, Hooktheory, pianoletternotes.blogspot.com · จัดทำโดย luffy (x-files) สำหรับ Mr.Foxx
+  </div>
+
+</body>
+</html>

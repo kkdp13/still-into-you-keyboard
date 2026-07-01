@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Still Into You — C major Staff (Beginner)</title>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.2.2/dist/abcjs-basic-min.js"></script>
+<style>
+  @page { size: A4; margin: 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Helvetica Neue", "Sarabun", Arial, sans-serif; color:#1a1a2e; margin:0; font-size:13px; line-height:1.5; }
+  h1 { font-size:25px; margin:0 0 2px; letter-spacing:-.5px; }
+  h1 .by { font-size:15px; font-weight:400; color:#6b6b83; }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 14px; }
+  .chip { background:#f0f0f7; border-radius:20px; padding:3px 12px; font-size:12px; font-weight:600; }
+  .chip.hl { background:#8ce99a; }
+  .chip.hl2 { background:#ffd23f; }
+  h2 { font-size:15px; margin:16px 0 8px; padding-bottom:4px; border-bottom:2px solid #8ce99a; }
+  #staff { background:#fff; border:1px solid #e3e3ee; border-radius:10px; padding:6px 4px; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .chordcard { border:1px solid #e3e3ee; border-radius:10px; padding:10px 8px 8px; text-align:center; background:#fafafd; }
+  .chordcard .cname { font-size:17px; font-weight:800; }
+  .chordcard .cnotes { font-size:11px; color:#6b6b83; margin-bottom:6px; }
+  .kb { position:relative; display:inline-flex; height:70px; }
+  .wk { width:19px; height:70px; border:1px solid #33334d; background:#fff; border-radius:0 0 3px 3px; position:relative; }
+  .wk .lbl { position:absolute; bottom:2px; left:0; right:0; font-size:8px; color:#9a9ab0; }
+  .wk.on { background:#8ce99a; }
+  .wk.on .lbl { color:#2b6a33; font-weight:700; }
+  .bk { position:absolute; width:11px; height:42px; background:#26263a; border-radius:0 0 2px 2px; top:0; z-index:2; }
+  .prog { background:#fafafd; border:1px solid #e3e3ee; border-radius:10px; padding:10px 14px; }
+  .prog .row { margin:5px 0; }
+  .prog .sec { display:inline-block; width:96px; font-weight:700; color:#4a4a6a; }
+  .prog b { display:inline-block; background:#eafff0; border:1px solid #c3ecce; border-radius:6px; padding:1px 9px; margin:1px 3px; font-size:13px; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:4px; }
+  .box { background:#fafafd; border:1px solid #e3e3ee; border-radius:10px; padding:10px 14px; }
+  .box h3 { margin:0 0 6px; font-size:13px; }
+  ul { margin:4px 0; padding-left:18px; } li { margin:3px 0; }
+  .tips { background:#fff9e6; border:1px solid #ffe08a; border-radius:10px; padding:10px 14px; }
+  .legend { font-size:11px; color:#6b6b83; margin:6px 0 0; }
+  .foot { margin-top:14px; padding-top:8px; border-top:1px solid #e3e3ee; font-size:10px; color:#9a9ab0; }
+</style>
+</head>
+<body>
+
+  <h1>Still Into You <span class="by">— Paramore</span></h1>
+  <div class="meta">
+    <span class="chip hl">Key: C major (ขาวล้วน · ไม่มี ♯/♭)</span>
+    <span class="chip hl2">โน้ต 5 เส้น (Treble clef)</span>
+    <span class="chip">ซ้อมช้า ~68 BPM</span>
+    <span class="chip">4 คอร์ด: C · Am · F · G</span>
+  </div>
+
+  <h2>🎼 โน้ต 5 เส้น — ทำนองหลัก (มีชื่อโน้ตใต้ตัวโน้ต)</h2>
+  <div id="staff"></div>
+  <p class="legend">อ่านซ้าย→ขวา · เส้นแบ่ง = 1 ห้อง (4 จังหวะ) · ตัวอักษรใต้โน้ต = ชื่อปุ่มที่กด (ขาวล้วนทุกตัว) · เล่นด้วยมือขวารอบ ๆ กลางคีย์บอร์ด (โน้ต C = middle C)</p>
+
+  <h2>🎹 คอร์ด (มือซ้าย) — กดปุ่มขาวที่ไฮไลต์ ไม่มีปุ่มดำเลย</h2>
+  <div class="grid">
+    <!-- C: C E G -->
+    <div class="chordcard"><div class="cname">C</div><div class="cnotes">C · E · G</div>
+      <div class="kb">
+        <div class="wk on"><span class="lbl">C</span></div><div class="wk"><span class="lbl">D</span></div><div class="wk on"><span class="lbl">E</span></div><div class="wk"><span class="lbl">F</span></div><div class="wk on"><span class="lbl">G</span></div><div class="wk"><span class="lbl">A</span></div><div class="wk"><span class="lbl">B</span></div><div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:13px"></div><div class="bk" style="left:32px"></div><div class="bk" style="left:70px"></div><div class="bk" style="left:89px"></div><div class="bk" style="left:108px"></div>
+      </div>
+    </div>
+    <!-- Am: A C E -->
+    <div class="chordcard"><div class="cname">Am</div><div class="cnotes">A · C · E</div>
+      <div class="kb">
+        <div class="wk on"><span class="lbl">C</span></div><div class="wk"><span class="lbl">D</span></div><div class="wk on"><span class="lbl">E</span></div><div class="wk"><span class="lbl">F</span></div><div class="wk"><span class="lbl">G</span></div><div class="wk on"><span class="lbl">A</span></div><div class="wk"><span class="lbl">B</span></div><div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:13px"></div><div class="bk" style="left:32px"></div><div class="bk" style="left:70px"></div><div class="bk" style="left:89px"></div><div class="bk" style="left:108px"></div>
+      </div>
+    </div>
+    <!-- F: F A C -->
+    <div class="chordcard"><div class="cname">F</div><div class="cnotes">F · A · C</div>
+      <div class="kb">
+        <div class="wk"><span class="lbl">C</span></div><div class="wk"><span class="lbl">D</span></div><div class="wk"><span class="lbl">E</span></div><div class="wk on"><span class="lbl">F</span></div><div class="wk"><span class="lbl">G</span></div><div class="wk on"><span class="lbl">A</span></div><div class="wk"><span class="lbl">B</span></div><div class="wk on"><span class="lbl">C</span></div>
+        <div class="bk" style="left:13px"></div><div class="bk" style="left:32px"></div><div class="bk" style="left:70px"></div><div class="bk" style="left:89px"></div><div class="bk" style="left:108px"></div>
+      </div>
+    </div>
+    <!-- G: G B D -->
+    <div class="chordcard"><div class="cname">G</div><div class="cnotes">G · B · D</div>
+      <div class="kb">
+        <div class="wk"><span class="lbl">C</span></div><div class="wk on"><span class="lbl">D</span></div><div class="wk"><span class="lbl">E</span></div><div class="wk"><span class="lbl">F</span></div><div class="wk on"><span class="lbl">G</span></div><div class="wk"><span class="lbl">A</span></div><div class="wk on"><span class="lbl">B</span></div><div class="wk"><span class="lbl">C</span></div>
+        <div class="bk" style="left:13px"></div><div class="bk" style="left:32px"></div><div class="bk" style="left:70px"></div><div class="bk" style="left:89px"></div><div class="bk" style="left:108px"></div>
+      </div>
+    </div>
+  </div>
+  <p class="legend">🟢 = ปุ่มที่กด (นิ้วโป้ง-กลาง-ก้อย พร้อมกัน 3 นิ้ว) · ทั้ง 4 คอร์ดใช้ปุ่มขาวล้วน</p>
+
+  <h2>🗺️ ลำดับคอร์ด (คีย์ C major)</h2>
+  <div class="prog">
+    <div class="row"><span class="sec">Verse</span> <b>C</b> <b>Am</b> <b>C</b> <b>Am</b> <span class="legend">(วนสลับ C ↔ Am)</span></div>
+    <div class="row"><span class="sec">Pre-chorus</span> <b>F</b> <b>G</b> <b>Am</b> <b>C</b></div>
+    <div class="row"><span class="sec">Chorus</span> <b>F</b> <b>G</b> <b>C</b> <b>C</b> &nbsp;→&nbsp; <b>F</b> <b>G</b> <b>Am</b> <b>C</b></div>
+  </div>
+
+  <div class="two">
+    <div class="box"><h3>👐 วิธีเล่น</h3>
+      <ul>
+        <li><b>มือขวา:</b> เล่นทำนองตามโน้ต 5 เส้น (ชื่อโน้ตอยู่ใต้ตัว)</li>
+        <li><b>มือซ้าย:</b> กดคอร์ดตาม "ลำดับคอร์ด" — หรือกดแค่โน้ตตัวแรกของคอร์ดก็ได้ตอนเริ่ม</li>
+        <li>เริ่มจากมือเดียวก่อน คล่องแล้วค่อยรวม 2 มือ</li>
+      </ul>
+    </div>
+    <div class="tips"><h3>💡 เคล็ดลับมือใหม่</h3>
+      <ul>
+        <li>ทุกอย่างอยู่บน<b>ปุ่มขาวล้วน</b> — ไม่ต้องแตะปุ่มดำเลย</li>
+        <li>ซ้อม ~68 BPM ก่อน แล้วค่อยเร่ง · นับ 1-2-3-4 ทุกห้อง</li>
+        <li>มีแค่ <b>4 คอร์ด</b> (C Am F G) วนทั้งเพลง</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">
+    ชีตซ้อมเวอร์ชัน beginner (simplified · แปลงเป็น C major) — เพื่อการเรียนรู้ ไม่รวมเนื้อร้อง · คอร์ด/ทำนองอ้างอิง Ultimate-Guitar · Hooktheory · pianoletternotes.blogspot.com · จัดทำโดย luffy (x-files) สำหรับ Mr.Foxx
+  </div>
+
+<script>
+  var abc =
+    "X:1\n" +
+    "T:Still Into You  (Simplified in C major)\n" +
+    "C:Paramore\n" +
+    "M:4/4\n" +
+    "L:1/4\n" +
+    "Q:1/4=68\n" +
+    "K:C\n" +
+    '"F"G G A E | "G"D C B, A, | "C"C C E E | "C"E4 | "F"F E D C | "G"B, A, E2 | "C"A,4 |]\n' +
+    "w: G G A E D C B A C C E E E F E D C B A E A\n";
+  ABCJS.renderAbc("staff", abc, {
+    responsive: "resize",
+    staffwidth: 690,
+    scale: 1.25,
+    add_classes: false,
+    paddingtop: 6, paddingbottom: 6, paddingleft: 8, paddingright: 8
+  });
+</script>
+</body>
+</html>
